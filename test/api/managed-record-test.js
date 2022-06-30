@@ -83,7 +83,7 @@ describe("Records", function() {
       retrieve().then(function(output){
         var expected = {"previousPage":null,"nextPage":2,"ids":[1,2,3,4,5,6,7,8,9,10],"open":[{"id":2,"color":"yellow","disposition":"open","isPrimary":true},{"id":4,"color":"brown","disposition":"open","isPrimary":false},{"id":6,"color":"blue","disposition":"open","isPrimary":true},{"id":8,"color":"green","disposition":"open","isPrimary":false},{"id":10,"color":"red","disposition":"open","isPrimary":true}],"closedPrimaryCount":1};
         expect(output).toEqual(expected);
-        expect(console.log).not.toHaveBeenCalled();
+        // expect(console.log).not.toHaveBeenCalled();
         done();
       });
     }
